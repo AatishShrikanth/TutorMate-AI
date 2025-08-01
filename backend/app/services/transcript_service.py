@@ -3,9 +3,9 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from typing import Optional, Tuple
 
 # Patch the session globally once
-session = requests.Session()
-session.verify = False
-TranscriptApi._TranscriptApi__session = session
+#session = requests.Session()
+#session.verify = False
+# TranscriptApi._TranscriptApi__session = session
 
 class TranscriptService:
     def __init__(self):
