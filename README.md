@@ -189,16 +189,18 @@ region = us-east-1
 ### Starting the Application
 
 ```bash
-# Option 1: Use the startup script
+# How to run the script:
+python3 -m venv venv
+cd venv
+cd bin(for mac), cd Scripts(for windows)
+source activate(for mac), Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass + .\Activate.ps1(for windows)
+cd ../..
+pip install -r requirements.txt
+# Before running the code, see AWS Credentials Setup 
+
 ./start.sh
 
-# Option 2: Manual startup
-# Terminal 1 - Start backend
-cd backend/app
-python main.py
 
-# Terminal 2 - Start frontend
-streamlit run app.py
 ```
 
 ### Using Practice Questions
