@@ -10,9 +10,8 @@ sleep 2
 
 # Start fresh backend
 echo "🚀 Starting backend server..."
-cd backend
 source venv/bin/activate
-cd app
+cd backend/app
 python3 main.py &
 BACKEND_PID=$!
 cd ../..

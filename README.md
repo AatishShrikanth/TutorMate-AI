@@ -1,6 +1,6 @@
-# TutorAI Enhanced Features 🎓
+# TutorAI Features 🎓
 
-This document describes the enhanced features and architecture of the TutorAI application.
+This document describes the features and architecture of the TutorAI application.
 
 ## 🔗 Connection Flow Diagram
 
@@ -186,19 +186,19 @@ region = us-east-1
 
 ## 🚀 How to Use
 
-### Starting the Enhanced Application
+### Starting the Application
 
 ```bash
 # Option 1: Use the startup script
-./start_enhanced_app.sh
+./start.sh
 
 # Option 2: Manual startup
 # Terminal 1 - Start backend
 cd backend/app
-python main_fixed.py
+python main.py
 
-# Terminal 2 - Start enhanced frontend
-streamlit run streamlit_app_enhanced.py
+# Terminal 2 - Start frontend
+streamlit run app.py
 ```
 
 ### Using Practice Questions
@@ -234,7 +234,7 @@ streamlit run streamlit_app_enhanced.py
 
 ## 🔧 Configuration
 
-The enhanced features use the same configuration as the base application:
+The features use the same configuration as the base application:
 - AWS Bedrock for AI processing
 - Claude Haiku model for responses
 - Same environment variables and setup
